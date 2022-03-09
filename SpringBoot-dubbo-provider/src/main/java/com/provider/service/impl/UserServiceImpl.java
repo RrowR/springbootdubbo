@@ -2,7 +2,7 @@ package com.provider.service.impl;
 
 import com.api.bean.User;
 import com.api.service.UserService;
-import org.apache.dubbo.config.annotation.DubboService;
+import org.apache.dubbo.config.annotation.Service;
 
 /**
  * @author: Rrow
@@ -12,7 +12,7 @@ import org.apache.dubbo.config.annotation.DubboService;
 /*
     用户查询服务
  */
-@DubboService(version = "1.0")
+@Service
 public class UserServiceImpl implements UserService {
     @Override
     public User queryUserByUserId(Integer userId) {

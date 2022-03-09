@@ -8,6 +8,6 @@ import com.api.bean.User;
  */
 public interface UserService {
 
-    public User queryUserByUserId(Integer userId);
+    User queryUserByUserId(Integer userId);
 
 }
